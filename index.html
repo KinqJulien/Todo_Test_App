@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Einfache Todo App</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <h1>Meine Todos</h1>
+      <form id="todo-form" class="todo-form">
+        <label for="todo-input" class="todo-label">Neues Todo</label>
+        <div class="input-group">
+          <input
+            id="todo-input"
+            name="todo"
+            type="text"
+            placeholder="Was möchtest du erledigen?"
+            autocomplete="off"
+            required
+          />
+          <button type="submit">Speichern</button>
+        </div>
+      </form>
+      <ul id="todo-list" class="todo-list" aria-live="polite"></ul>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
